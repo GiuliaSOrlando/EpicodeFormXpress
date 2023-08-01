@@ -19,8 +19,8 @@ export class FormComponent {
   ngOnInit() {
     this.form = this.fb.group(
       {
-        nome: this.fb.control(null, [Validators.required]),
-        cognome: this.fb.control(null, [Validators.required]),
+        name: this.fb.control(null, [Validators.required]),
+        surname: this.fb.control(null, [Validators.required]),
         username: ['', [Validators.required, Validators.minLength(5)]],
         sexes: this.fb.control(null, [Validators.required]),
         profileImage: [null],

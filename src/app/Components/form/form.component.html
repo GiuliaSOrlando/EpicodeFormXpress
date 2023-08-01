@@ -3,24 +3,24 @@
     <input
       type="name"
       class="form-control dark-input"
-      placeholder="Il tuo nome"
-      formControlName="nome"
+      placeholder="Insert your name here"
+      formControlName="name"
     />
-    <span *ngIf="!isValid('nome') && isTouched('nome')" class="error-message"
-      >Inserire un nome valido</span
+    <span *ngIf="!isValid('name') && isTouched('name')" class="error-message"
+      >Please enter a valid name</span
     >
   </div>
   <div class="form-group mb-3">
     <input
       type="surname"
       class="form-control dark-input"
-      placeholder="Il tuo cognome"
-      formControlName="cognome"
+      placeholder="Insert your surname here"
+      formControlName="surname"
     />
     <span
-      *ngIf="!isValid('cognome') && isTouched('cognome')"
+      *ngIf="!isValid('surname') && isTouched('surname')"
       class="error-message"
-      >Inserire un cognome valido</span
+      >Please enter a valid surname</span
     >
   </div>
   <div class="form-group mb-3">
@@ -54,7 +54,7 @@
         <input
           type="email"
           class="form-control dark-input"
-          placeholder="La tua mail"
+          placeholder="Insert your email here"
           formControlName="email"
         />
       </div>
@@ -62,7 +62,7 @@
         <input
           type="password"
           class="form-control dark-input"
-          placeholder="La tua password"
+          placeholder="Insert your password here"
           formControlName="password"
         />
       </div>
@@ -70,7 +70,7 @@
         <input
           type="password"
           class="form-control dark-input"
-          placeholder="Conferma la tua password"
+          placeholder="Confirm your password here"
           formControlName="confirm-password"
         />
       </div>
@@ -78,11 +78,17 @@
         *ngIf="form.errors && form.errors['passwordMismatch']"
         class="error-message mb-3"
       >
-        Passwords do not match.
+        Passwords do not match
+      </span>
+      <span
+        *ngIf="!form.errors || !form.errors['passwordMismatch']"
+        class="success-message mb-3"
+      >
+        Passwords match
       </span>
     </div>
     <span *ngIf="!isValid('authData')" class="error-message mb-3"
-      >Inserire dati validi</span
+      >Please enter valid data</span
     >
   </div>
   <div class="form-group mb-3">
