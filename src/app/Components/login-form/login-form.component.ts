@@ -40,16 +40,16 @@ export class LoginFormComponent {
           .post<any>('http://localhost:3000/users', { username, password })
           .subscribe(
             (response) => {
-              console.log('Login successful!', response);
+              console.log(response);
+              alert('Login successful!');
             },
             (error) => {
-              console.error('Error adding new user!', error);
+              console.error(error);
+              alert('Login failed!');
             }
           );
       } else {
-        console.log(
-          'Username already exists! Please choose a different username.'
-        );
+        alert('Username already exists! Please choose a different username.');
       }
     }
   }
