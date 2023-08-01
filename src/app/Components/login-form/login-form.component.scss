@@ -1,0 +1,44 @@
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #2a2d35;
+  color: #f2f2f2;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input::placeholder {
+  color: #a0a0a0;
+}
+
+input:focus {
+  border-color: #99ccff;
+}
+
+button {
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.error-message {
+  color: #ff7575;
+  font-size: 14px;
+  margin-top: 5px;
+}

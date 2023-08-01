@@ -1,0 +1,41 @@
+.container {
+  margin: 0 -20;
+  padding: 20px;
+  background-color: #282c34;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+  color: #fff;
+  height: 100vh;
+}
+
+.registration-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-info h2 {
+  color: #ff7575;
+  margin-bottom: 10px;
+}
+
+.registration-info p {
+  font-size: 18px;
+}
+
+.angular-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.joking-sentence {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.joking-sentence p {
+  font-size: 16px;
+}
